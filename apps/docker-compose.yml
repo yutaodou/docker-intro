@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: ddou/web-demo2:1
+    ports:
+      - "80:5000"
+  time-server:
+    image: ddou/time-server:1
+    ports:
+      - "5000:5000"
