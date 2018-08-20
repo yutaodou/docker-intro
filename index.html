@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Intro to Docker</title>
+		<title>Docker 101</title>
 
 		<meta name="description" content="Intro to Docker">
 		<meta name="author" content="Docker Inc, adapted by John Lewis">
@@ -38,13 +38,11 @@
 	
 <section>
 	<div>
-		<img src="docker-img/docker.png" style="width: 432px; height: 376px; max-height: none; max-width: none;"/>
+		<img src="docker-img/docker-image.png" />
 		<br/>
 	</div>
-	<h1>Intro to Docker</h1>
+	<h1>Docker 101</h1>
 </section>
-		
-<
 
 <section>
 	<h2>The Challenge</h2>
@@ -96,12 +94,20 @@
 </section>
 
 <section>
+		<h2>What's docker</h2>
+	<ul>
+		<li>Docker is an open platform for developing, shipping, and running applications.</li>
+		<li>Docker enables you to separate your applications from your infrastructure so you can deliver software quickly.</li>
+		<li>With Docker, you can manage your infrastructure in the same ways you manage your applications.</li>
+	</ul>
+</section>
+
+<section>
 	<h2>Docker to save</h2>
 	<p>
 		<img src="docker-img/what-is-docker.png">
 	</p>
 </section>
-
 
 <section>
 	<h2>Why Developers Care</h2>
@@ -115,10 +121,6 @@
 			<li class="fragment" data-fragment-index="4">Reduce/eliminate concerns about compatibility on different platforms, either your own or your customers.</li>
 			<li class="fragment" data-fragment-index="5">Cheap, zero-penalty containers to deploy services. A VM without the overhead of a VM. Instant replay and reset of image snapshots.</li>
 		</ul>
-	</div>
-	<div style="text-align: center; font-size: 24px; line-height: 1.1em; ">
-		<i><font color="#073763">* Where "anywhere" means an x86 server running a modern Linux kernel<br/>
-			(3.2+ generally or 2.6.32+ for RHEL 6.5+,&nbsp;Fedora, &amp; related)</font></i>
 	</div>
 </section>
 
@@ -144,49 +146,14 @@
 </section>
 
 <section>
-	<h2>More Technical Details</h2>
-	<div style="position: absolute; left: 1%; top: 100px; width: 48%;" class="absolute-element">
-		<p><b>Why</b></p>
-		<ul style="text-align: left; line-height=1.1em;">
-			<li class="fragment" data-fragment-index="0">Run everywhere</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="0">
-				<li>Regardless of kernel version</li>
-				<li>Regardless of host distro</li>
-				<li>Physical or virtual, cloud or not</li>
-				<li>Container and host architecture must match...</li>
-			</ul>
-			<li class="fragment" data-fragment-index="1">Run anything</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="1">
-				<li>If it can run on the host, it can run in the container</li>
-				<li>If it can on a Linux kernel, it can run</li>
-			</ul>
-		</ul>
-	</div>
-	<div style="position: absolute; left: 52%; top: 100px; width: 48%;" class="absolute-element">
-		<p><b>What</b></p>
-		<ul style="text-align: left; line-height=1.1em;">
-			<li class="fragment" data-fragment-index="2">High level: a lightweight VM</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="2">
-				<li>Own process space</li>
-				<li>Own network interface</li>
-				<li>Can run stuff as root</li>
-				<li>Can have its own /sbin/init (different from host)</li>
-				<li>&lt;&lt;machine container&gt;&gt;</li>
-			</ul>
-			<li class="fragment" data-fragment-index="3">Low level: chroot on steroids</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="3">
-				<li>Can also <i>not </i>have its own /sbin/init</li>
-				<li>Container = isolated processes</li>
-				<li>Share kernel with host</li>
-				<liNo device emulation</li>
-				<li>&lt;&lt;application container&gt;&gt;</li>
-			</ul>
-		</ul>
-	</div>
-</section>
+		<h2>Docker Architecture</h2>
+		<p>
+			<img src="docker-img/engine-components-flow.png">
+		</p>
+	</section>
 
 <section>
-	<h2>What are the Basics of a Docker System?</h2>
+	<h2>Docker Architecture</h2>
 	<p>
 		<img src="docker-img/docker-architecture.svg">
 	</p>
@@ -200,7 +167,7 @@
 </section>
 
 <section>
-	<h2>Demo Time</h2>
+	<h1>Demo Time</h1>
 </section>
 
 <section>
